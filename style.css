@@ -56,7 +56,7 @@ nav {
     flex: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: auto;
     padding: 10%;
 }
@@ -77,23 +77,26 @@ nav {
     display: none;
 }
 
-.wrapper {
-    padding: 50px 20px;
-
-
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
 }
 
 .about {
     margin: 50px 0;
-    text-align: center;
+    text-align: start;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 
 }
 
+
 .about h1 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
+    /* max-width: 70%; */
 
 }
 
@@ -101,12 +104,12 @@ nav {
     color: var(--color-medium-gray);
     line-height: 25px;
     font-weight: var(--font-weight-regular);
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 
 .about button {
     max-width: 50%;
-    align-self: center;
+    align-self: start;
     padding: 15px 25px;
     border-radius: 15px;
     border: none;
@@ -138,6 +141,8 @@ nav {
         justify-content: center;
         align-items: center;
         max-width: 100%;
+        padding: 0;
+        margin: 0;
 
     }
 
@@ -152,10 +157,25 @@ nav {
     .right-section {
         display: none;
     }
-}
+
+    .about {
+        padding: 0;
+        text-align: center;
+
+    }
+
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .about button {
+
+        align-self: center;
+    }
 
 
-/* utility classes */
-.hidden {
-    display: none;
+    /* utility classes */
+    .hidden {
+        display: none;
+    }
 }
