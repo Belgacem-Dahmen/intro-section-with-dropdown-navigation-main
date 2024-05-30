@@ -134,7 +134,7 @@ nav {
 }
 
 
-@media screen and (max-width: 775px) {
+@media screen and (min-width: 775px) {
     .container {
         display: flex;
         flex-direction: column-reverse;

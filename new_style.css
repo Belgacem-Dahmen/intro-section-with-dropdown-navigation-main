@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors - Neutral */
+    --color-almost-white: hsl(0, 0%, 98%);
+    --color-medium-gray: hsl(0, 0%, 41%);
+    --color-almost-black: hsl(0, 0%, 8%);
+
+    /* Typography - Body Copy */
+    --font-family-body: "Epilogue", sans-serif;
+    --font-size-paragraph: 18px;
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+.hidden-on-mobile {
+    display: none;
+}
+
+.hidden-on-desktop {
+    display: block;
+}
+
+body {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-paragraph);
+    max-width: 1440px;
+    height: 100vh;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    align-items: center;
+}
+
+.about {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.about-content h1 {
+    font-size: 2.2rem;
+
+}
+
+.about-content p {
+    color: var(--color-medium-gray);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5em;
+    line-break: auto;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.about-content button {
+    max-width: fit-content;
+    align-self: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-almost-black);
+    color: var(--color-almost-white);
+    border: none;
+}
+
+.clients {
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.clients img {
+    max-width: 70px;
+}
+
+
+/* desktop and others */
+@media screen and (min-width:475px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+
+    .hidden-on-mobile {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        margin: 0 10%;
+        gap: 100px;
+
+    }
+
+    .left-section {
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        flex-direction: column;
+        max-width: 50%;
+
+
+    }
+
+    .about-content {
+        margin-top: 50px;
+        text-align: left;
+        gap: 50px;
+        flex-grow: 1;
+    }
+
+    .about-content h1 {
+        font-size: 4.5rem;
+        max-width: 92%;
+    }
+
+    .about-content p {
+        padding: 0;
+        max-width: 75%;
+    }
+
+    .about-content button {
+        align-self: flex-start;
+    }
+
+    .clients{
+       padding: 0;
+       justify-content: flex-start;
+       gap: 40px;
+        justify-self: flex-end;
+    }
+
+    .right-section img {
+        min-width: 100%;
+    }
+}

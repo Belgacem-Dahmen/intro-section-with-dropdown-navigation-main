@@ -10,14 +10,14 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="new_style.css">
 </head>
 
 <body>
   <nav>
     <div class="left-side-nav">
       <img src="./images/logo.svg" alt="" class="logo">
-      <div class="nav-links">
+      <div class="nav-links hidden-on-mobile">
         <ul>
           <li class="nav-link"><a href="#">Features</a></li>
           <li class="nav-link"><a href="#">Company</a></li>
@@ -27,16 +27,18 @@
       </div>
 
     </div>
-    <div class="right-side-nav">
-      <button>Login</button>
-      <button>Register</button>
-    </div>
-    <img style="display:none" src="./images/icon-menu.svg" alt="">
-  </nav>
-  <img class="mobile-img" src="./images/image-hero-mobile.png" alt="">
-  <div class="container">
-    <section class="left-section">
+    <div class="right-side-nav ">
+      <div class="hidden-on-mobile">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
 
+    </div>
+    <img class="hidden-on-desktop" src="./images/icon-menu.svg" alt="">
+  </nav>
+  <img class="hidden-on-desktop" src="./images/image-hero-mobile.png" alt="">
+  <div class="container">
+    <div class="left-section">
       <section class="about">
         <div class="about-content">
           <h1>Make remote work</h1>
@@ -51,16 +53,15 @@
 
       </section>
       <section class="clients ">
-        <div class="clients-logo">
-          <img src="./images/client-databiz.svg" alt="" class="client">
-          <img src="/images/client-audiophile.svg" alt="" class="client">
-          <img src="/images/client-meet.svg" alt="" class="client">
-          <img src="/images/client-maker.svg" alt="" class="client">
-        </div>
+        <img src="./images/client-databiz.svg" alt="" class="client">
+        <img src="/images/client-audiophile.svg" alt="" class="client">
+        <img src="/images/client-meet.svg" alt="" class="client">
+        <img src="/images/client-maker.svg" alt="" class="client">
+
       </section>
-    </section>
+    </div>
     <div class="right-section">
-      <img class="desktop-img" src="./images/image-hero-desktop.png" alt="">
+      <img class="hidden-on-mobile" src="./images/image-hero-desktop.png" alt="">
     </div>
 
   </div>
