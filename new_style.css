@@ -38,7 +38,7 @@ svg {
 body {
     font-family: var(--font-family-body);
     font-size: var(--font-size-paragraph);
-    max-width: 1320px;
+    max-width: 1620px;
     margin: auto;
 }
 
@@ -103,7 +103,7 @@ nav {
 
 
 /* desktop and others */
-@media screen and (min-width:475px) {
+@media screen and (min-width:775px) {
     .hidden-on-desktop {
         display: none;
     }
@@ -117,15 +117,33 @@ nav {
         justify-content: space-between;
         padding: 20px 20px;
         align-items: center;
+        background: red;
+
+    }
+
+    .left-side-nav {
+        display: flex;
+        gap: 75px;
+
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--color-medium-gray);
     }
 
     .container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
-        margin: 0 10%;
-        
-
+        max-width: 100%;
+        /* margin: 0 auto; */
+        background: red;
     }
 
     .left-section {
@@ -133,15 +151,16 @@ nav {
         justify-content: space-evenly;
         flex-grow: 1;
         flex-direction: column;
-        max-width: 50%;
+
 
 
     }
 
+
     .about-content {
         margin-top: 50px;
         text-align: left;
-        gap: 50px;
+        gap: 40px;
         flex-grow: 1;
     }
 
@@ -159,14 +178,19 @@ nav {
         align-self: flex-start;
     }
 
-    .clients{
-       padding: 0;
-       justify-content: flex-start;
-       gap: 40px;
+    .clients {
+        padding: 0;
+        justify-content: flex-start;
+        gap: 40px;
         justify-self: flex-end;
     }
 
     .right-section img {
         max-width: 75%;
+        display: flex;
+        align-self: flex-end;
+        justify-self: flex-end;
+
+
     }
 }
